@@ -39,12 +39,12 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['eventgradeexported'] = 'Groupfilter txt grado exportado';
-$string['pluginname'] = 'Groupfilter Archivo de texto sin formato';
-$string['privacy:metadata'] = 'El conector de exportación de calificaciones de archivos de texto sin formato no almacena ningún dato personal.';
+$string['eventgradeexported'] = 'Calificaciones en formato TXT exportadas (incluída la información del grupo)';
+$string['pluginname'] = 'Groupfilter Archivo de texto simple';
+$string['privacy:metadata'] = 'El plugin de exportación de calificaciones en formato TXT no almacena ningún dato personal.';
 $string['timeexported'] = 'Última descarga de este curso';
-$string['groupfilter_txt:publish'] = 'Publicar exportación de grado Groupfilter txt';
-$string['groupfilter_txt:view'] = 'Utilizar la exportación de calificaciones de texto';
+$string['groupfilter_txt:publish'] = 'Publicar la exportación de las calificaciones en formato TXT (incluída la información del grupo)';
+$string['groupfilter_txt:view'] = 'Utilizar la exportación de las calificaciones en formato TXT';
 
 // Added for grade_export_form.
 $string['userfieldsheader'] = 'Campos de usuario';
