@@ -39,14 +39,14 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['eventgradeexported'] = 'Groupfilter txt grade exported';
+$string['eventgradeexported'] = 'Grades in TXT format exported (including group information)';
 $string['pluginname'] = 'Groupfilter Plain text file';
-$string['privacy:metadata'] = 'The Plain text file grade export plugin does not store any personal data.';
+$string['privacy:metadata'] = 'The grade export plugin in TXT format does not store any personal data.';
 $string['timeexported'] = 'Last downloaded from this course';
-$string['groupfilter_txt:publish'] = 'Publish Groupfilter txt grade export';
-$string['groupfilter_txt:view'] = 'Use text grade export';
+$string['groupfilter_txt:publish'] = 'Publish grade export in TXT format (including group information)';
+$string['groupfilter_txt:view'] = 'Use grade export in TXT format';
 
 // Added for grade_export_form.
 $string['userfieldsheader'] = 'User Fields';
-$string['userfields_form'] = 'Selection of User Fields';
+$string['userfields_form'] = 'Selection of user fields';
 $string['group'] = 'Groups';
