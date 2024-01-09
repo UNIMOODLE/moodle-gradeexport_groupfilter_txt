@@ -39,12 +39,12 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['eventgradeexported'] = 'Groupfilter txt grau exportat';
-$string['pluginname'] = 'Groupfilter Fitxer de text senzill';
-$string['privacy:metadata'] = 'El connector d\'exportació de graus en fitxer de text senzill no emmagatzema cap dada personal.';
-$string['timeexported'] = 'Última descàrrega d\'aquest curs';
-$string['groupfilter_txt:publish'] = 'Publiqueu l\'exportació del grau de txt Groupfilter';
-$string['groupfilter_txt:view'] = 'Utilitzeu l\'exportació de qualificació de text';
+$string['eventgradeexported'] = 'S\'han exportat les qualificacions en format TXT (informació del grup inclosa)';
+$string['pluginname'] = 'Groupfilter Fitxer de text net';
+$string['privacy:metadata'] = 'El connector d\'exportació de qualificacions en format TXT no emmagatzema cap dada personal.';
+$string['timeexported'] = 'Darrera descàrrega des d\'aquest curs';
+$string['groupfilter_txt:publish'] = 'Publica l\'exportació de les qualificacions en format TXT (informació del grup inclosa)';
+$string['groupfilter_txt:view'] = 'Utilitza l\'exportació de les qualificacions en format TXT';
 
 // Added for grade_export_form.
 $string['userfieldsheader'] = 'Camps d\'usuari';
