@@ -23,7 +23,7 @@
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
  * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package groupfilter_txt
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -34,7 +34,7 @@
 /**
  * Version details
  *
- * @package    gradeexport
+ * @package    gradeexport_groupfilter_txt
  * @subpackage txt
  * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

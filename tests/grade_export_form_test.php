@@ -22,8 +22,8 @@
 // Illes Balears, Valencia, Rey Juan Carlos, La Laguna, Zaragoza, Málaga,
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
- * Display information about all the gradereport_gradeconfigwizard modules in the requested course. *
- * @package gradeconfigwizard
+ * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -33,10 +33,18 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace gradeexport_groupfilter_txt;
 
-defined('MOODLE_INTERNAL') || die();
-
-class  groupfilter_txt_grade_export_form_test extends \advanced_testcase {
+/**
+ * Class grade_export_form_test
+ *
+ * This class represents a unit test case for the grade_export_form class
+ * in the gradeexport_groupfilter_txt plugin.
+ *
+ * @coversDefaultClass \gradeexport_groupfilter_txt\grade_export_form
+ * @group gradeexport_groupfilter_txt
+ */
+class  grade_export_form_test extends \advanced_testcase {
 
     /**
      * Test form_constructor.
@@ -54,5 +62,4 @@ class  groupfilter_txt_grade_export_form_test extends \advanced_testcase {
         $mform = new \gradeexport_groupfilter_txt\grade_export_form(null, $formoptions);
         $this->assertNotEmpty($mform, 'userfields created in the form');
     }
-
 }

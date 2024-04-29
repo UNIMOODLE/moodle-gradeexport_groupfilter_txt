@@ -23,7 +23,7 @@
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
  * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package groupfilter_txt
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -34,19 +34,18 @@
 /**
  * Grade export event.
  *
- * @package    gradeexport_txt
+ * @package    gradeexport_groupfilter_txt
  * @copyright  2016 Zane Karl <zkarl@oid.ucla.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace gradeexport_groupfilter_txt\event;
 
-defined('MOODLE_INTERNAL') || die();
 
 /**
  * Grade export event class.
  *
- * @package    gradeexport_txt
+ * @package    gradeexport_groupfilter_txt
  * @since      Moodle 3.2
  * @copyright  2016 Zane Karl <zkarl@oid.ucla.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

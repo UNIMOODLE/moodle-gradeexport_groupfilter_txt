@@ -19,7 +19,7 @@ namespace gradeexport_groupfilter_txt\event;
 /**
  * TXT grade export events test cases.
  *
- * @package    gradeexport_txt
+ * @package    gradeexport_groupfilter_txt
  * @copyright  2016 Zane Karl zkarl@oid.ucla.edu
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -34,6 +34,8 @@ class events_test extends \advanced_testcase {
 
     /**
      * Test course_module_instance_list_viewed event.
+     *
+     * @covers \gradeexport_txt\event\grade_exported::create
      */
     public function test_logging() {
         // There is no proper API to call to trigger this event, so what we are

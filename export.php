@@ -23,7 +23,7 @@
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
  * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package groupfilter_txt
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -66,12 +66,13 @@ if (groups_get_course_groupmode($COURSE) == SEPARATEGROUPS && !has_capability('m
     }
 }
 
-$params = array(
+$params = [
     'includeseparator' => true,
     'publishing' => true,
     'simpleui' => true,
     'multipledisplaytypes' => true,
-);
+];
+
 $mform = new \gradeexport_groupfilter_txt\grade_export_form(null, $params);
 
 // Form processing and displaying is done here.
@@ -88,12 +89,6 @@ if ($mform->is_cancelled()) {
     $data = $mform->get_data();
     $export = new grade_export_groupfilter_txt($course, $groupid, $data);
 } else {
-    // This branch is executed if the form is submitted but the data doesn't
-    // validate and the form should be redisplayed or on the first display of the form.
-
-    // Set anydefault data (if any).
-    // $mform->set_data($toform);
-
     // Display the form.
     $mform->display();
 }

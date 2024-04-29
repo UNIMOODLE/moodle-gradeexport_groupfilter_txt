@@ -17,14 +17,13 @@
 /**
  * Privacy Subsystem implementation for gradeexport_txt.
  *
- * @package    gradeexport_txt
+ * @package    gradeexport_groupfilter_txt
  * @copyright  2018 Sara Arjona <sara@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace gradeexport_groupfilter_txt\privacy;
 
-defined('MOODLE_INTERNAL') || die();
 
 /**
  * Privacy Subsystem for gradeexport_txt implementing null_provider.
@@ -40,7 +39,7 @@ class provider implements \core_privacy\local\metadata\null_provider {
      *
      * @return  string
      */
-    public static function get_reason() : string {
+    public static function get_reason(): string {
         return 'privacy:metadata';
     }
 }

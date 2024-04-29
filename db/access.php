@@ -23,7 +23,7 @@
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
  * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package groupfilter_txt
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -34,35 +34,33 @@
 /**
  * Capabilities gradeexport plugin.
  *
- * @package    gradeexport_txt
+ * @package    gradeexport_groupfilter_txt
  * @copyright  2007 Petr Skoda {@link http://skodak.org}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$capabilities = array(
+$capabilities = [
 
-    'gradeexport/groupfilter_txt:view' => array(
+    'gradeexport/groupfilter_txt:view' => [
         'riskbitmask' => RISK_PERSONAL,
         'captype' => 'read',
         'contextlevel' => CONTEXT_COURSE,
-        'archetypes' => array(
+        'archetypes' => [
             'teacher' => CAP_ALLOW,
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW,
-        ),
-    ),
+        ],
+    ],
 
-    'gradeexport/groupfilter_txt:publish' => array(
+    'gradeexport/groupfilter_txt:publish' => [
         'riskbitmask' => RISK_PERSONAL,
         'captype' => 'read',
         'contextlevel' => CONTEXT_COURSE,
-        'archetypes' => array(
+        'archetypes' => [
             'manager' => CAP_ALLOW,
-        ),
-    ),
+        ],
+    ],
 
-);
-
-
+];

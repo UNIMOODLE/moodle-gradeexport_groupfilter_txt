@@ -23,7 +23,7 @@
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
  * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package groupfilter_txt
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -33,22 +33,45 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot.'/grade/export/lib.php');
+require_once($CFG->dirroot . '/grade/export/lib.php');
 require_once($CFG->libdir . '/csvlib.class.php');
 
+
+/**
+ * Class grade_export_groupfilter_txt
+ *
+ * This class extends the grade_export class and represents a grade export handler
+ * specifically designed for group filtering and exporting data in text format.
+ */
 class grade_export_groupfilter_txt extends grade_export {
 
+    /**
+     * The plugin type for this export handler.
+     *
+     * @var string
+     */
     public $plugin = 'groupfilter_txt';
 
-    public $separator; // Default separator.
+    /**
+     * The separator used for exporting data.
+     *
+     * @var string
+     */
+    public $separator;
 
+    /**
+     * The validated form data.
+     *
+     * @var stdClass
+     */
     private $formdata;
 
     /**
-     * Constructor should set up all the private variables ready to be pulled
-     * @param object $course
-     * @param int $groupid id of selected group, 0 means all
-     * @param stdClass $formdata The validated data from the grade export form.
+     * Constructor for grade_export_groupfilter_txt.
+     *
+     * @param object    $course     The course object.
+     * @param int       $groupid    The ID of the selected group. 0 means all.
+     * @param stdClass  $formdata   The validated data from the grade export form.
      */
     public function __construct($course, $groupid, $formdata) {
         parent::__construct($course, $groupid, $formdata);
@@ -58,6 +81,11 @@ class grade_export_groupfilter_txt extends grade_export {
         $this->usercustomfields = true;
     }
 
+    /**
+     * Get the export parameters.
+     *
+     * @return array The export parameters.
+     */
     public function get_export_params() {
         $params = parent::get_export_params();
         $params['separator'] = $this->separator;
@@ -65,20 +93,44 @@ class grade_export_groupfilter_txt extends grade_export {
     }
 
     /**
-     * Init object based using data from form
-     * @param object $formdata
+     * Bulk export data handler.
+     *
+     * @param int      $id                The ID of the item.
+     * @param array    $itemids           An array of item IDs.
+     * @param bool     $exportfeedback    Whether to export feedback.
+     * @param bool     $onlyactive        Whether to export only active users.
+     * @param int      $displaytype       The display type for grades.
+     * @param int      $decimalpoints     The number of decimal points for grades.
+     * @param bool     $updatedgradesonly Whether to export updated grades only.
+     * @param string   $separator         The separator for exporting data.
+     * @return mixed                      The exported data.
      */
-    public function process_form($formdata) {
-        parent::process_form($formdata);
-    }
-
-    public static function export_bulk_export_data($id, $itemids, $exportfeedback, $onlyactive, $displaytype,
-                                                   $decimalpoints, $updatedgradesonly = null, $separator = null) {
-        $form = parent::export_bulk_export_data($id, $itemids, $exportfeedback, $onlyactive, $displaytype,
-            $decimalpoints, $updatedgradesonly = null, $separator = null);
+    public static function export_bulk_export_data(
+        $id,
+        $itemids,
+        $exportfeedback,
+        $onlyactive,
+        $displaytype,
+        $decimalpoints,
+        $updatedgradesonly = null,
+        $separator = null
+    ) {
+        $form = parent::export_bulk_export_data(
+            $id,
+            $itemids,
+            $exportfeedback,
+            $onlyactive,
+            $displaytype,
+            $decimalpoints,
+            $updatedgradesonly = null,
+            $separator = null
+        );
         return $form;
     }
 
+    /**
+     * Print grades for export.
+     */
     public function print_grades() {
         global $CFG;
         $exporttracking = $this->track_exports();
@@ -307,7 +359,6 @@ class grade_export_groupfilter_txt extends grade_export {
                 // Time exported.
                 $exportdata[] = time();
                 $csvexport->add_data($exportdata);
-
             }
         }
         $gui->close();
@@ -316,5 +367,3 @@ class grade_export_groupfilter_txt extends grade_export {
         exit;
     }
 }
-
-

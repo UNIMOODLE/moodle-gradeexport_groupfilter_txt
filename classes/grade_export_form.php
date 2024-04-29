@@ -21,9 +21,10 @@
 // Valladolid, Complutense de Madrid, UPV/EHU, León, Salamanca,
 // Illes Balears, Valencia, Rey Juan Carlos, La Laguna, Zaragoza, Málaga,
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
+
 /**
  * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package groupfilter_txt
+ * @package gradeexport_groupfilter_txt
  * @copyright 2023 Proyecto UNIMOODLE
  * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
  * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
@@ -37,20 +38,30 @@ defined('MOODLE_INTERNAL') || die();
 
 use core_reportbuilder\local\filters\text;
 
-require_once($CFG->dirroot.'/grade/export/grade_export_form.php');
-require_once($CFG->dirroot.'/user/lib.php');
-require_once($CFG->dirroot.'/user/profile/lib.php');
+require_once($CFG->dirroot . '/grade/export/grade_export_form.php');
+require_once($CFG->dirroot . '/user/lib.php');
+require_once($CFG->dirroot . '/user/profile/lib.php');
 
+
+/**
+ * Class grade_export_form
+ *
+ * This class represents a form for exporting grades.
+ * It extends the \grade_export_form class.
+ */
 class grade_export_form extends \grade_export_form {
-    public function __construct($action=null, $customdata=null, $method='post', $target='', $attributes=null,
-                                $editable=true, $ajaxformdata=null) {
-        parent::__construct($action, $customdata, $method, $target, $attributes, $editable, $ajaxformdata);
-    }
+
+    /**
+     * Define the form elements for grade_export_form
+     */
     public function definition() {
         global $CFG;
         parent::definition();
-        $element = $this->_form->createElement('header', 'userfieldsheader',
-            get_string('userfieldsheader', 'gradeexport_groupfilter_txt'));
+        $element = $this->_form->createElement(
+            'header',
+            'userfieldsheader',
+            get_string('userfieldsheader', 'gradeexport_groupfilter_txt')
+        );
         $this->_form->insertElementBefore($element, 'submitbutton');
 
         // Obtain the user profield fields of the user from setting administration.
@@ -77,14 +88,17 @@ class grade_export_form extends \grade_export_form {
         // User profield fields + User custom fields.
         $userfieldsoptions += $usercustomfields;
 
-        $userfieldslabel = $this->_form->createElement('static', 'label_userfields',
-            get_string('userfields_form', 'gradeexport_groupfilter_txt'));
+        $userfieldslabel = $this->_form->createElement(
+            'static',
+            'label_userfields',
+            get_string('userfields_form', 'gradeexport_groupfilter_txt')
+        );
         $this->_form->insertElementBefore($userfieldslabel, 'submitbutton');
 
         // User fields create form element.
         foreach ($userfieldsoptions as $key => $checkboxfields) {
-            $elementname = 'userfieldsvisbile_'.$key;
-            $foo = 'elem_'.$elementname;
+            $elementname = 'userfieldsvisbile_' . $key;
+            $foo = 'elem_' . $elementname;
             $$foo = $this->_form->createElement('checkbox', $elementname,  $checkboxfields);
 
             $this->_form->setDefault($elementname, 1);
