@@ -22,20 +22,14 @@
 // Illes Balears, Valencia, Rey Juan Carlos, La Laguna, Zaragoza, Málaga,
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
- * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
- * @package gradeexport_groupfilter_txt
- * @copyright 2023 Proyecto UNIMOODLE
- * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
- * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
- * @author Miguel Gutiérrez (UPCnet) &lt;miguel.gutierrez.jariod@upcnet.es&gt;
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-/**
  * Capabilities gradeexport plugin.
- *
- * @package    gradeexport_groupfilter_txt
- * @copyright  2007 Petr Skoda {@link http://skodak.org}
+ * @package gradeexport_groupfilter_txt
+ * @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io}
+ * @copyright 2007 Petr Skoda {@link http://skodak.org}
+ * @author UNIMOODLE Group (Coordinator) <direccion.area.estrategia.digital@uva.es>
+ * @author Joan Carbassa (IThinkUPC) <joan.carbassa@ithinkupc.com>
+ * @author Miguel Gutiérrez (UPCnet) <miguel.gutierrez.jariod@upcnet.es>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
