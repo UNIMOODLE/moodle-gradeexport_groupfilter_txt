@@ -24,7 +24,7 @@
 /**
  * Version details
  * @package gradeexport_groupfilter_txt
- * @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io}
+ * @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io} {@link https://unimoodle.github.io}
  * @copyright 1999 onwards Martin Dougiamas (http://dougiamas.com)
  * @author UNIMOODLE Group (Coordinator) <direccion.area.estrategia.digital@uva.es>
  * @author Joan Carbassa (IThinkUPC) <joan.carbassa@ithinkupc.com>

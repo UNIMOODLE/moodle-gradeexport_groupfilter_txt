@@ -46,7 +46,7 @@ Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 Display information about all the gradereport_gradeconfigwizard modules in the requested course.
 
 * @package gradeconfigwizard
-* @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io}
+* @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io} {@link https://unimoodle.github.io}
 * @author UNIMOODLE Group (Coordinator) <direccion.area.estrategia.digital@uva.es>
  * @author Joan Carbassa (IThinkUPC) <joan.carbassa@ithinkupc.com>
  * @author Yerai Rodríguez (IThinkUPC) <yerai.rodriguez@ithinkupc.com>
