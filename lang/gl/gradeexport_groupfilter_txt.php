@@ -22,31 +22,22 @@
 // Illes Balears, Valencia, Rey Juan Carlos, La Laguna, Zaragoza, Málaga,
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
- * 
+ * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
  * @package gradeexport_groupfilter_txt
- * @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io} {@link https://unimoodle.github.io}
- * @author UNIMOODLE Group (Coordinator) <direccion.area.estrategia.digital@uva.es>
- * @author Joan Carbassa (IThinkUPC) <joan.carbassa@ithinkupc.com>
- * @author Miguel Gutiérrez (UPCnet) <miguel.gutierrez.jariod@upcnet.es>
+ * @copyright 2023 Proyecto UNIMOODLE
+ * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
+ * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
+ * @author Miguel Gutiérrez (UPCnet) &lt;miguel.gutierrez.jariod@upcnet.es&gt;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/**
- * Strings for component 'gradeexport_groupfilter_txt'.
- *
- * @package   gradeexport_groupfilter_txt
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 
 $string['eventgradeexported'] = 'Groupfilter txt grao exportado';
+$string['group'] = 'Grupos';
+$string['groupfilter_txt:publish'] = 'Publicar a exportación de calidade de txt de Groupfilter';
+$string['groupfilter_txt:view'] = 'Usa a exportación de notas de texto';
 $string['pluginname'] = 'Groupfilter Ficheiro de texto simple';
 $string['privacy:metadata'] = 'O complemento de exportación de calidade de ficheiro de texto simple non almacena ningún dato persoal.';
 $string['timeexported'] = 'Última descarga deste curso';
-$string['groupfilter_txt:publish'] = 'Publicar a exportación de calidade de txt de Groupfilter';
-$string['groupfilter_txt:view'] = 'Usa a exportación de notas de texto';
-
-// Added for grade_export_form.
-$string['userfieldsheader'] = 'Campos de usuario';
 $string['userfields_form'] = 'Selección de campos de usuario';
-$string['group'] = 'Grupos';
+$string['userfieldsheader'] = 'Campos de usuario';

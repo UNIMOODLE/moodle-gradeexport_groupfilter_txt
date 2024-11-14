@@ -22,21 +22,26 @@
 // Illes Balears, Valencia, Rey Juan Carlos, La Laguna, Zaragoza, Málaga,
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
 /**
- * Version details
+ * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
  * @package gradeexport_groupfilter_txt
- * @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io} {@link https://unimoodle.github.io}
- * @copyright 1999 onwards Martin Dougiamas (http://dougiamas.com)
- * @author UNIMOODLE Group (Coordinator) <direccion.area.estrategia.digital@uva.es>
- * @author Joan Carbassa (IThinkUPC) <joan.carbassa@ithinkupc.com>
- * @author Miguel Gutiérrez (UPCnet) <miguel.gutierrez.jariod@upcnet.es>
+ * @copyright 2023 Proyecto UNIMOODLE
+ * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
+ * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
+ * @author Miguel Gutiérrez (UPCnet) &lt;miguel.gutierrez.jariod@upcnet.es&gt;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/**
+ * Version details
+ *
+ * @package    gradeexport_groupfilter_txt
  * @subpackage txt
+ * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023043001;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2024110701;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2022041911;        // Requires this Moodle version.
-$plugin->release   = "0.0.3";
-$plugin->maturity  = MATURITY_BETA;
 $plugin->component = 'gradeexport_groupfilter_txt'; // Full name of the plugin (used for diagnostics).

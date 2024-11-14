@@ -1,4 +1,4 @@
-@gradeexport @groupfilter_txt
+@gradeexport @gradeexport_groupfilter_txt
 Feature: I need to export grades as text and ordered by groups
   In order to easily review marks
   As a teacher

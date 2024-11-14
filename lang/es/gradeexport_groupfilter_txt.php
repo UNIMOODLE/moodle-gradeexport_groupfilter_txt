@@ -21,27 +21,23 @@
 // Valladolid, Complutense de Madrid, UPV/EHU, León, Salamanca,
 // Illes Balears, Valencia, Rey Juan Carlos, La Laguna, Zaragoza, Málaga,
 // Córdoba, Extremadura, Vigo, Las Palmas de Gran Canaria y Burgos.
-
 /**
- * Strings for component 'gradeexport_groupfilter_txt'.
- *
- * @package   gradeexport_groupfilter_txt
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @copyright 2023 Proyecto UNIMOODLE {@link https://unimoodle.github.io} {@link https://unimoodle.github.io}
- * @author UNIMOODLE Group (Coordinator) <direccion.area.estrategia.digital@uva.es>
- * @author Joan Carbassa (IThinkUPC) <joan.carbassa@ithinkupc.com>
- * @author Miguel Gutiérrez (UPCnet) <miguel.gutierrez.jariod@upcnet.es>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Display information about all the gradeexport_groupfilter_txt modules in the requested course. *
+ * @package gradeexport_groupfilter_txt
+ * @copyright 2023 Proyecto UNIMOODLE
+ * @author UNIMOODLE Group (Coordinator) &lt;direccion.area.estrategia.digital@uva.es&gt;
+ * @author Joan Carbassa (IThinkUPC) &lt;joan.carbassa@ithinkupc.com&gt;
+ * @author Miguel Gutiérrez (UPCnet) &lt;miguel.gutierrez.jariod@upcnet.es&gt;
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+
 $string['eventgradeexported'] = 'Groupfilter txt grado exportado';
+$string['group'] = 'Grupos';
+$string['groupfilter_txt:publish'] = 'Publicar exportación de grado Groupfilter txt';
+$string['groupfilter_txt:view'] = 'Utilizar la exportación de calificaciones de texto';
 $string['pluginname'] = 'Groupfilter Archivo de texto sin formato';
 $string['privacy:metadata'] = 'El conector de exportación de calificaciones de archivos de texto sin formato no almacena ningún dato personal.';
 $string['timeexported'] = 'Última descarga de este curso';
-$string['groupfilter_txt:publish'] = 'Publicar exportación de grado Groupfilter txt';
-$string['groupfilter_txt:view'] = 'Utilizar la exportación de calificaciones de texto';
-
-// Added for grade_export_form.
-$string['userfieldsheader'] = 'Campos de usuario';
 $string['userfields_form'] = 'Selección de campos de usuario';
-$string['group'] = 'Grupos';
+$string['userfieldsheader'] = 'Campos de usuario';
